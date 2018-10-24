@@ -33,9 +33,9 @@ Spring didn't start up as a convention over configuration MVC web framework prec
 
 * (Developer) TODO: fetch from Maven. I haven't gotten around to publishing to Maven.
 
-* Download and extract abacus-demo-0.1.0-SNAPSHOT.tar, cd to its bin directory, execute abacus-basic-demo. This distribution has all the dependencies exploded, so you have the advantage of upgrading libraries should you find that necessary, OR
+* Untar dist/abacus-demo-0.1.0-SNAPSHOT.tar, cd to its bin directory, execute abacus-basic-demo. This distribution has all the dependencies exploded, so you have the advantage of upgrading libraries should you find that necessary, OR
 
-* Download and extract abacus-demo-boot-0.1.0-SNAPSHOT.tar. Execution instructions are the same. In this distribution, everything is packaged in a single jar (jca-abacus-demo-0.1.0.jar), so you could also run it by executing java -jar jca-abacus-demo-0.1.0.jar.
+* Untar dist/abacus-demo-boot-0.1.0-SNAPSHOT.tar, etc, as above. In this distribution, everything is packaged in a single jar (jca-abacus-demo-0.1.0.jar), so you could also run it by executing java -jar jca-abacus-demo-0.1.0.jar.
 
 * Install abacus-basic-demo shell script (or Windows .bat) into your bin directory, install jca-abacus-demo.jar into your lib directory, execute abacus-basic-demo
 

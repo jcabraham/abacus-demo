@@ -75,3 +75,6 @@ Spring didn't start up as a convention over configuration MVC web framework prec
 
 * (If AWS) Consider deploying to an autoscaling group, modifying to run in Elastic Beanstalk, or (best) re-write this as AWS Lambda functions.
 
+## TODO ##
+
+* Should return an error message in the event of non-integers used as person ids in the GET and DELETE queries.

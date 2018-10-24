@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "person.storage.driver",
+    "type": "java.lang.String",
+    "description": "A description for 'person.storage.driver'"
+  },
+  {
+    "name": "person.storage.file.path",
+    "type": "java.lang.String",
+    "description": "A description for 'person.storage.file.path'"
+  }
+]}

@@ -27,17 +27,19 @@ Spring didn't start up as a convention over configuration MVC web framework prec
 
 ## Building/Deploying ##
 
-We're both long time Java guys, we know Maven dependency management is excellent, and Gradle is a great build tool. It's got a build.gradle, with the usual targets. So if you wanted to try it out, there's several options:
+(Assuming that Java 8 is installed)
 
 * (Developer) Clone this thing, make sure you've got Java and Gradle installed (use SDKMAN!), gradle bootRun, run curl against localhost:8080 with the endpoints above. Advantages: it's what the kids know from GitHub, you can hack on it. Disadvantages: knowing things and needing to type things.
 
-* (Developer) Publish to maven library. I haven't bothered to get that fancy.
+* (Developer) TODO: fetch from Maven. I haven't gotten around to publishing to Maven.
 
-* With Java installed, execute java -jar jca-abacus-demo.jar. This will run standalone.
+* Download and extract abacus-demo-0.1.0-SNAPSHOT.tar, cd to its bin directory, execute abacus-basic-demo. This distribution has all the dependencies exploded, so you have the advantage of upgrading libraries should you find that necessary, OR
+
+* Download and extract abacus-demo-boot-0.1.0-SNAPSHOT.tar. Execution instructions are the same. In this distribution, everything is packaged in a single jar (jca-abacus-demo-0.1.0.jar), so you could also run it by executing java -jar jca-abacus-demo-0.1.0.jar.
 
 * Install abacus-basic-demo shell script (or Windows .bat) into your bin directory, install jca-abacus-demo.jar into your lib directory, execute abacus-basic-demo
 
-* Drop the jar into your favorite servlet container. Advantages: little programming expertise required, developer maintains control over development, quality, and IP protection by shipping (obfuscated) class files. 
+* Drop the jar(s) from either distribution into your favorite servlet container. Advantages: little programming expertise required, developer maintains control over development, quality, and IP protection by shipping (obfuscated) class files. 
 
 * Install docker-ce and run: docker run -p 5000:8080 jcabraham/jca-abacus-demo:0.1.0-SNAPSHOT, which will pull from Docker Hub and run it. Advantages: deployment couldn't be simpler. Disadvantages: quite a lot, actually, for anything beyond the simplest project. We should talk about "Docker considered harmful."
 

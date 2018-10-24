@@ -1,7 +1,5 @@
 # Jim Abraham's Abacus Demo #
 
-(I'm gonna treat you and me as long-time professionals here. Whatever I'm leaving out, you should assume it's because frankly I don't have the time to indulge in an orgy of typing, and not because I don't know it. Please try me.)
-
 As instructed, here's a SpringBoot REST service that conforms to the following specification. It accepts (and responds with JSON payloads) to the following endpoints:
 
 * PUT    /resources/data           # creates Person from JSON payload, returns Person containing new object id.
@@ -22,8 +20,7 @@ JSON attributes as follows:
 ## Development ##
 
 
-For this trivial use case, I could have done the entire thing in 200 lines of Perl without a single dependency, including self-tests,
-but as SpringBoot was requested, I went and looked at it. You said Java artifacts so I wrote it that way instead of in Groovy.
+For this trivial use case, I could have done the entire thing in 200 lines of Perl without a single dependency, including self-tests, but as SpringBoot was requested, I went and looked at it. You said Java artifacts so I wrote it that way instead of in Groovy.
 
 Spring didn't start up as a convention over configuration MVC web framework precisely. I used it years ago, principally as a way never to look at Struts again, but with SpringBoot they've produced the now age-old MVC C-over-C web development pattern familiar from RubyOnRails, Django, node.js, Grails (built on Spring, I've written this for years) and lots more. 
 
